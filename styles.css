@@ -186,37 +186,58 @@ button:hover {
 /* 💖 Make the Card Scrollable */
 .card-container {
     padding: 40px;
-    max-width: 900px;
+    max-width: 90%;
     margin: auto;
     background: rgba(255, 20, 147, 0.15);
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
-    max-height: 400px; /* Limit height */
-    overflow-y: auto; /* Enables scrolling */
+    max-height: 60vh;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
+    scrollbar-width: thin;
+    position: relative; /* Ensure relative positioning */
 }
 
-/* 🎀 Fix to Ensure Scrolling Works */
+/* 🎀 Ensure Scrollbar Works */
 .card-text {
-    max-height: 300px; /* Set height limit for content */
+    max-height: 50vh; /* Ensure scrolling */
     overflow-y: auto;
-    padding-right: 10px;
+    padding-right: 15px;
+    font-size: 1.3rem;
 }
 
-/* 🎀 Custom Scrollbar */
-.card-container::-webkit-scrollbar, .card-text::-webkit-scrollbar {
-    width: 10px;
+/* 🌟 KEEP "NEXT" BUTTON ALWAYS VISIBLE */
+.next-btn {
+    position: sticky;
+    bottom: 10px; /* Keep at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-size: 1.3rem;
+    padding: 14px;
+    z-index: 10; /* Ensure it's above content */
 }
 
-.card-container::-webkit-scrollbar-track, .card-text::-webkit-scrollbar-track {
-    background: #FF69B4;
-    border-radius: 10px;
-}
+/* 📱 Mobile Optimization */
+@media (max-width: 768px) {
+    .card-container {
+        max-width: 95%;
+        max-height: 70vh;
+        padding-bottom: 70px; /* Space for the button */
+    }
 
-.card-container::-webkit-scrollbar-thumb, .card-text::-webkit-scrollbar-thumb {
-    background: #FFD700;
-    border-radius: 10px;
+    .card-text {
+        max-height: 60vh;
+        font-size: 1.2rem;
+    }
+
+    .next-btn {
+        width: 90%;
+        font-size: 1.2rem;
+        padding: 12px;
+        bottom: 5px;
+    }
 }
 
 
@@ -285,3 +306,4 @@ button:hover {
     box-shadow: 0 5px 30px rgba(255, 20, 147, 0.7);
     background: linear-gradient(45deg, #FF1493, #FF69B4);
 }
+
