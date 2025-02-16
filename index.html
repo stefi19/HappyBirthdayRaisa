@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Raisa! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <div id="landing" class="section active">
+            <h1 class="title">🎊 Happy Birthday, Raisa! 🎊</h1>
+            <div class="floating-balls">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGgyYWUwN2oyZmt5bmhreDd6YnVlcXFoM2FmaTdrNTAwZm05bHRkcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7rzbxdu0ZEXLy/giphy.gif"
+                    class="disco-ball">
+            </div>
+            <button class="start-btn" onclick="startCelebration()">🎈 Click to Start! 🎈</button>
+        </div>
+
+        <!-- Sentimental Card -->
+        <!-- Sentimental Card Section -->
+        <div id="card" class="section hidden">
+            <h2 class="glow-text">For My Best Friend 💖</h2>
+            <p class="card-text">
+                Raisa, from the moment we met, you became the most unexpected and beautiful surprise in my life.
+                You are not just my best friend—you are my family, my home away from home, my safe place.
+                Every single moment with you is filled with laughter, love, and the kind of joy that only comes when
+                you find someone who truly understands you and doesn't judge you.
+
+                You are the person who lifts me up when I doubt myself.
+                I am beyond proud of you—of the person you are, of the strength you carry, and of the love of adventure
+                you have.
+
+                You inspire me every single day, and I can’t even imagine life without you by my side.
+                No matter where life takes us, no matter how far apart we may be, I promise to always be there for you,
+                to stand by you through everything, to be your loudest cheerleader.
+
+                You mean the absolute world to me, and I will love you, support you, and cherish you for all the
+                birthdays to come.
+                You are my person, Raisa, and I wouldn’t trade you for anything in this universe.
+
+                🎂 Happiest 20th Birthday! ✨ I love you forever. 💖
+            </p>
+            <p class="taylor-swift-text">"It's a love story, baby just say yes!" 🎶</p>
+            <button class="next-btn" onclick="showGame()">Next ➡️</button>
+        </div>
+
+
+        <!-- Disco Ball Game -->
+        <div id="game" class="section hidden">
+            <h2 class="disco-title">Catch the Disco Balls! 🪩</h2>
+            <p>Score: <span id="score">0</span></p>
+            <div class="game-area"></div>
+            <button class="next-btn" onclick="showCake()">Next ➡️</button>
+        </div>
+
+        <!-- Cake Blowing -->
+        <div id="cake-section" class="section hidden">
+            <h2>🎂 Make a Wish & Blow the Candles! 🎂</h2>
+            <div class="cake-img" id="cake"></div>
+            <button class="blow-btn" onclick="blowCandles()">💨 Blow! 💨</button>
+        </div>
+
+        <!-- Confetti & Smoke (Hidden Until Needed) -->
+        <div id="confetti" class="confetti hidden"></div>
+        <div id="smoke" class="smoke hidden"></div>
+
+        <!-- FINAL MESSAGE PAGE -->
+        <div id="final-page" class="section hidden">
+            <h1 class="love-text">💖 I Love You Forever, Raisa! 💖</h1>
+            <h2 class="birthday-text">Happiest Birthday to You! 🎂🎉</h2>
+            <div class="final-disco">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGgyYWUwN2oyZmt5bmhreDd6YnVlcXFoM2FmaTdrNTAwZm05bHRkcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7rzbxdu0ZEXLy/giphy.gif"
+                    class="disco-ball">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGgyYWUwN2oyZmt5bmhreDd6YnVlcXFoM2FmaTdrNTAwZm05bHRkcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7rzbxdu0ZEXLy/giphy.gif"
+                    class="disco-ball">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGgyYWUwN2oyZmt5bmhreDd6YnVlcXFoM2FmaTdrNTAwZm05bHRkcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7rzbxdu0ZEXLy/giphy.gif"
+                    class="disco-ball">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Taylor Swift Music -->
+    <audio id="taylorMusic" src="assets/Taylor Swift - You Belong With Me.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+/* ✨ Stunning Font & Color Upgrade */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&family=Pacifico&display=swap');
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #FF007F, #FF69B4, #FFC0CB);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 💖 Elegant Title */
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7);
+    animation: glowText 1.5s infinite alternate;
+}
+
+@keyframes glowText {
+    0% { text-shadow: 0 0 10px #FF1493, 0 0 20px #FF69B4; }
+    100% { text-shadow: 0 0 20px #FF69B4, 0 0 30px #FF1493; }
+}
+
+/* 🌟 Glow Effect for Text */
+.glow-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(255, 223, 0, 0.5);
+    animation: sparkle 1.5s infinite alternate;
+}
+
+@keyframes sparkle {
+    0% { text-shadow: 0 0 10px #FFD700, 0 0 20px #FF8C00; }
+    100% { text-shadow: 0 0 20px #FF8C00, 0 0 30px #FFD700; }
+}
+
+/* ✨ Beautiful Button Styles */
+button {
+    background: linear-gradient(45deg, #FF69B4, #FF1493);
+    border: none;
+    padding: 15px 35px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 20, 147, 0.4);
+    margin-top: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(255, 20, 147, 0.6);
+    background: linear-gradient(45deg, #FF1493, #FF69B4);
+}
+
+/* 🎂 Cake */
+.cake-img {
+    width: 300px;
+    height: 300px;
+    background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExejM2dW9xbHkyajU2cmpyZnZmZDMxajlhZ28zeWlqNzN2Mm5xY3BhaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT8qBibO7VRAvqdzzy/giphy.gif') no-repeat center/cover;
+    margin: 20px auto;
+}
+
+/* 🪩 Disco Ball */
+.disco-ball {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 🎊 Confetti */
+.confetti {
+    width: 100%;
+    height: 100vh;
+    background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWt3NWE2OHhudDc0bzVnY2pvY2FsZ3dsZ3g1d2h6NjJoZWVwdnV6NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3vRaLSB7dP96NTWw/giphy.gif') no-repeat center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* 💨 Smoke Effect */
+.smoke {
+    width: 100%;
+    height: 100vh;
+    background: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGxidWVpcnE2Z2pwNDRpeXp4cmNsdGdvdGtoZGJpMzR0NTNuOThieiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/n3xSURtNE62t2/giphy.gif') no-repeat center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* ✨ Smooth Section Transition */
+.section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.section.active {
+    display: block;
+    opacity: 1;
+}
+
+/* 🎮 Game Section */
+.game-area {
+    width: 100%;
+    height: 300px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 5px solid #FF69B4;
+}
+
+/* 🪩 Falling Disco Balls */
+.disco-ball-fall {
+    width: 50px;
+    height: 50px;
+    background: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGgyYWUwN2oyZmt5bmhreDd6YnVlcXFoM2FmaTdrNTAwZm05bHRkcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7rzbxdu0ZEXLy/giphy.gif') no-repeat center/cover;
+    position: absolute;
+    animation: fall 3s linear;
+    cursor: pointer;
+}
+
+@keyframes fall {
+    from { top: -50px; }
+    to { top: 300px; }
+}
+
+/* 💖 Final Love Message */
+.love-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #FF1493;
+    text-shadow: 2px 2px 15px rgba(255, 20, 147, 0.7);
+    animation: loveGlow 1.5s infinite alternate;
+}
+
+@keyframes loveGlow {
+    0% { text-shadow: 0 0 10px #FF1493, 0 0 20px #FF69B4; }
+    100% { text-shadow: 0 0 20px #FF69B4, 0 0 30px #FF1493; }
+}
+
+/* 🎂 Birthday Message */
+.birthday-text {
+    font-size: 2rem;
+    color: #FFC0CB;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🪩 Lots of Disco Balls */
+.final-disco {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.disco-ball {
+    width: 150px;
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 💖 Beautiful Card Layout */
+.card-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 20, 147, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
+}
+
+/* ✨ Glow Title */
+.glow-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #FFD700;
+    text-shadow: 3px 3px 20px rgba(255, 215, 0, 0.7);
+    animation: titleGlow 1.5s infinite alternate;
+}
+
+@keyframes titleGlow {
+    0% { text-shadow: 0 0 15px #FFD700, 0 0 30px #FF8C00; }
+    100% { text-shadow: 0 0 25px #FF8C00, 0 0 40px #FFD700; }
+}
+
+/* 💕 Elegant Card Text */
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #FFF;
+    text-shadow: 1px 1px 10px rgba(255, 20, 147, 0.3);
+    padding: 20px;
+    line-height: 1.8;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 💡 Text Fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card-text, .glow-text {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* 🎶 Taylor Swift Quote */
+.taylor-swift-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.7rem;
+    color: #FF69B4;
+    text-shadow: 2px 2px 10px rgba(255, 20, 147, 0.5);
+}
+
+/* 🌟 Button Glow */
+button {
+    background: linear-gradient(45deg, #FF69B4, #FF1493);
+    border: none;
+    padding: 15px 35px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 5px 20px rgba(255, 20, 147, 0.5);
+    margin-top: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 30px rgba(255, 20, 147, 0.7);
+    background: linear-gradient(45deg, #FF1493, #FF69B4);
+}
