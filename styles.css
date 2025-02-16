@@ -183,7 +183,7 @@ button:hover {
     100% { transform: rotate(360deg); }
 }
 
-/* 💖 Beautiful Card Layout */
+/* 💖 Beautiful Card Layout with Scroll */
 .card-container {
     padding: 40px;
     max-width: 900px;
@@ -191,7 +191,25 @@ button:hover {
     background: rgba(255, 20, 147, 0.15);
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
+    max-height: 400px; /* Keeps it contained */
+    overflow-y: auto; /* Enables scrolling */
 }
+
+/* 🎀 Scrollbar Customization */
+.card-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card-container::-webkit-scrollbar-track {
+    background: #FF69B4;
+    border-radius: 10px;
+}
+
+.card-container::-webkit-scrollbar-thumb {
+    background: #FFD700;
+    border-radius: 10px;
+}
+
 
 /* ✨ Glow Title */
 .glow-text {
