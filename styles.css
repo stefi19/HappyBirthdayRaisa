@@ -183,7 +183,7 @@ button:hover {
     100% { transform: rotate(360deg); }
 }
 
-/* 💖 Beautiful Card Layout with Scroll */
+/* 💖 Scrollable Card */
 .card-container {
     padding: 40px;
     max-width: 900px;
@@ -191,24 +191,32 @@ button:hover {
     background: rgba(255, 20, 147, 0.15);
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
-    max-height: 400px; /* Keeps it contained */
-    overflow-y: auto; /* Enables scrolling */
+    max-height: 450px; /* Adjust height */
+    overflow-y: auto; /* Enable vertical scroll */
 }
 
-/* 🎀 Scrollbar Customization */
-.card-container::-webkit-scrollbar {
-    width: 8px;
+/* 🎀 Fix: Ensuring Scroll Works */
+#card {
+    max-height: 500px; /* Set height for scrolling */
+    overflow-y: auto;
+    padding: 20px;
 }
 
-.card-container::-webkit-scrollbar-track {
+/* 🎀 Custom Scrollbar */
+.card-container::-webkit-scrollbar, #card::-webkit-scrollbar {
+    width: 10px;
+}
+
+.card-container::-webkit-scrollbar-track, #card::-webkit-scrollbar-track {
     background: #FF69B4;
     border-radius: 10px;
 }
 
-.card-container::-webkit-scrollbar-thumb {
+.card-container::-webkit-scrollbar-thumb, #card::-webkit-scrollbar-thumb {
     background: #FFD700;
     border-radius: 10px;
 }
+
 
 
 /* ✨ Glow Title */
